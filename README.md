@@ -1,2 +1,3 @@
-# template-js
-Template repo for HTML/CSS/JS projects
+# Homepage
+
+A responsive homepage for TOP. Created by [joeypizzas](https://github.com/joeypizzas).

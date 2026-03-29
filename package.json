@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "homepage",
   "version": "1.0.0",
-  "description": "Template repo for HTML/CSS/JS projects",
+  "description": "A responsive homepage for TOP",
   "main": "index.js",
   "scripts": {
     "test": "jest",
