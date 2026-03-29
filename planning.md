@@ -45,6 +45,7 @@
   - Flexbox with columns for title and then card area.
   - Card area uses css grid with golden responsive layout for cards that is naturally responsive.
   - Cards themselves are the same on each viewport size. Pretty simple use of flexbox.
+  - More bottom padding on tablet and mobile.
   - Section is otherwise naturally responsive across all three viewport sizes.
 - Contact:
   - Flexbox for info and landscrape image portions.
