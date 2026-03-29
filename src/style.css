@@ -29,3 +29,21 @@ body {
     Arial,
     sans-serif;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  background-color: var(--color-mozzarella);
+}
+
+.projects {
+  flex: 1;
+  background-color: var(--color-white);
+}
+
+.contact {
+  background-color: var(--color-mozzarella);
+}
