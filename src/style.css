@@ -1,1 +1,31 @@
 /* Homepage style */
+
+:root {
+  /* Brand */
+  --color-burnt-crust: #1c1917;
+  --color-marinara: #c2410c;
+  --color-mozzarella: #fef3c7;
+  --color-stone: #78716c;
+
+  /* Supporting */
+  --color-white: #ffffff;
+  --color-golden-crust: #d97706;
+  --color-charcoal: #292524;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
