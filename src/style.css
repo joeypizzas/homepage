@@ -37,6 +37,45 @@ body {
 
 .about {
   background-color: var(--color-mozzarella);
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.about-name {
+  font-size: 3.5rem;
+  color: var(--color-white);
+  font-weight: 700;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+}
+
+.about-description {
+  font-size: 1.5rem;
+  color: var(--color-stone);
 }
 
 .projects {
