@@ -42,50 +42,6 @@ body {
   position: relative;
 }
 
-@media (min-width: 1024px) {
-  /* Fix larger desktop image and gap between image and card, then move to tablet */
-  .about {
-    flex-direction: row;
-    background-color: var(--color-white);
-  }
-  .about::before {
-    position: absolute;
-    inset: 0;
-    background: var(--color-mozzarella);
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 85%);
-    z-index: 0;
-    content: "";
-  }
-  .about-image-name::before {
-    display: none;
-  }
-  .about-image-wrapper {
-    max-width: 600px;
-  }
-  .about-image-name {
-    z-index: 1;
-  }
-  .about-card {
-    background-color: var(--color-white);
-    justify-content: center;
-    z-index: 1;
-    margin: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  }
-  .about-title {
-    align-self: start;
-    padding: 0 0 0 1.5rem;
-  }
-  .about-description {
-    padding: 0 1.5rem 0 1.5rem;
-  }
-  .github-svg {
-    align-self: end;
-    padding: 0 1.5rem 0 0;
-  }
-}
-
 .about-image-name::before {
   position: absolute;
   inset: 0;
@@ -157,4 +113,49 @@ body {
 
 .contact {
   background-color: var(--color-mozzarella);
+}
+
+@media (min-width: 1024px) {
+  /* start tablet view */
+  .about {
+    flex-direction: row;
+    background-color: var(--color-white);
+  }
+  .about::before {
+    position: absolute;
+    inset: 0;
+    background: var(--color-mozzarella);
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 85%);
+    z-index: 0;
+    content: "";
+  }
+  .about-image-name::before {
+    display: none;
+  }
+  .about-image-wrapper {
+    max-width: 350px;
+  }
+  .about-image-name {
+    z-index: 1;
+    max-width: 600px;
+  }
+  .about-card {
+    background-color: var(--color-white);
+    justify-content: center;
+    z-index: 1;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  .about-title {
+    align-self: start;
+    padding: 0 0 0 1.5rem;
+  }
+  .about-description {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .github-svg {
+    align-self: end;
+    padding: 0 1.5rem 0 0;
+  }
 }
