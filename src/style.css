@@ -115,8 +115,28 @@ body {
   background-color: var(--color-mozzarella);
 }
 
+@media (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-template-areas:
+      "about-image-name about-image-name"
+      "about-image-wrapper about-card"
+      "about-image-wrapper about-card";
+  }
+  .about-image-wrapper {
+    grid-area: about-image-wrapper;
+  }
+  .about-name {
+    grid-area: about-name;
+  }
+  .about-card {
+    grid-area: about-card;
+  }
+}
+
 @media (min-width: 1024px) {
-  /* start tablet view */
   .about {
     flex-direction: row;
     background-color: var(--color-white);
