@@ -58,7 +58,6 @@ body {
   align-items: center;
   position: relative;
   padding: 1rem;
-  position: relative;
   z-index: 1;
   width: 100%;
 }
@@ -119,25 +118,47 @@ body {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr;
-    grid-template-areas:
-      "about-image-name about-image-name"
-      "about-image-wrapper about-card"
-      "about-image-wrapper about-card";
+    grid-template-areas: "about-image-name about-card";
+    position: relative;
+    gap: 0;
+  }
+  .about::before {
+    position: absolute;
+    inset: 0;
+    background: var(--color-mozzarella);
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 85%);
+    z-index: 0;
+    content: "";
+  }
+  .about-image-name {
+    grid-area: about-image-name;
+    position: static;
+    padding: 1rem 0 1rem 1rem;
   }
   .about-image-wrapper {
-    grid-area: about-image-wrapper;
+    position: static;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    max-width: 350px;
   }
   .about-name {
-    grid-area: about-name;
+    top: 1.5rem;
+    left: 55%;
   }
   .about-card {
     grid-area: about-card;
+    background-color: var(--color-white);
+    margin: 7rem 2rem 2rem 0;
+    padding-top: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   }
 }
 
 @media (min-width: 1024px) {
   .about {
+    display: flex;
     flex-direction: row;
     background-color: var(--color-white);
   }
@@ -152,18 +173,25 @@ body {
   .about-image-name::before {
     display: none;
   }
-  .about-image-wrapper {
-    max-width: 350px;
-  }
   .about-image-name {
     z-index: 1;
     max-width: 600px;
+    position: relative;
+  }
+  .about-image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .about-name {
+    left: 5%;
+    bottom: 5%;
+    top: auto;
   }
   .about-card {
     background-color: var(--color-white);
     justify-content: center;
     z-index: 1;
-    margin: 2rem;
+    margin: 2rem 2rem 2rem 0;
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   }
