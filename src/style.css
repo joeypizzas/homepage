@@ -108,6 +108,13 @@ body {
 .projects {
   flex: 1;
   background-color: var(--color-white);
+  padding: 2rem 3rem 0 3rem;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
 }
 
 .contact {
