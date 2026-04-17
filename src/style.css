@@ -171,7 +171,27 @@ body {
 }
 
 .contact {
-  background-color: var(--color-mozzarella);
+  background-color: var(--color-golden-crust);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: var(--color-white);
+  align-self: center;
+}
+
+.contact-description {
+  font-size: 1.4rem;
+  color: var(--color-white);
 }
 
 @media (min-width: 768px) {
