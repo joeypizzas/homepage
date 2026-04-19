@@ -174,12 +174,12 @@ body {
   background-color: var(--color-golden-crust);
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem 3rem 1rem;
 }
 
 .contact-text-container {
   display: flex;
   flex-direction: column;
+  padding: 2rem 1rem 3rem 1rem;
   gap: 1rem;
 }
 
@@ -204,6 +204,12 @@ body {
 
 .contact-svg {
   align-self: center;
+}
+
+.pizza-oven-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
