@@ -220,6 +220,7 @@ body {
     position: relative;
     gap: 0;
   }
+
   .about::before {
     position: absolute;
     inset: 0;
@@ -228,11 +229,13 @@ body {
     z-index: 0;
     content: "";
   }
+
   .about-image-name {
     grid-area: about-image-name;
     position: static;
     padding: 1rem 0 1rem 1rem;
   }
+
   .about-image-wrapper {
     position: static;
     display: flex;
@@ -240,10 +243,12 @@ body {
     align-items: start;
     max-width: 350px;
   }
+
   .about-name {
     top: 1.5rem;
     left: 55%;
   }
+
   .about-card {
     grid-area: about-card;
     background-color: var(--color-white);
@@ -251,6 +256,23 @@ body {
     padding-top: 3rem;
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .contact {
+    flex-direction: row;
+  }
+
+  .contact-text-container {
+    justify-content: center;
+    padding: 2rem 1rem 3rem 3rem;
+  }
+
+  .contact-title {
+    align-self: start;
+  }
+
+  .pizza-oven-image {
+    padding: 2rem;
   }
 }
 
@@ -260,6 +282,7 @@ body {
     flex-direction: row;
     background-color: var(--color-white);
   }
+
   .about::before {
     position: absolute;
     inset: 0;
@@ -268,23 +291,28 @@ body {
     z-index: 0;
     content: "";
   }
+
   .about-image-name::before {
     display: none;
   }
+
   .about-image-name {
     z-index: 1;
     max-width: 600px;
     position: relative;
   }
+
   .about-image-wrapper {
     position: relative;
     display: inline-block;
   }
+
   .about-name {
     left: 5%;
     bottom: 5%;
     top: auto;
   }
+
   .about-card {
     background-color: var(--color-white);
     justify-content: center;
@@ -293,15 +321,26 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   }
+
   .about-title {
     align-self: start;
     padding: 0 0 0 1.5rem;
   }
+
   .about-description {
     padding: 0 1.5rem 0 1.5rem;
   }
+
   .github-svg {
     align-self: end;
     padding: 0 1.5rem 0 0;
+  }
+
+  .contact-svg {
+    align-self: center;
+  }
+
+  .pizza-oven-image {
+    padding: 5rem;
   }
 }
